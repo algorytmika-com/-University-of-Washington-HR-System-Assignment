@@ -8,11 +8,15 @@ def main():
         elif response == "2":
             f.save_employees()
         elif response == "3":
-            f.add_employee
+            f.add_employee()
         elif response == "4":
-            f.report_employees()
+            f.report_current_employees()
         elif response == "5":
+            f.report_former_employees()  
+        elif response == "6":        
             f.report_reminders    
+        elif response == "7":
+            f.exit_program()
         else:
             print("Not a valid option!")
 
