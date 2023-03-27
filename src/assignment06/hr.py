@@ -3,6 +3,7 @@ from controllers import facade as f
 def main():
     while True:
         response = input(f.prompt)  
+        f.clear_console()
         if response == "1":
             f.load_employees()
         elif response == "2":

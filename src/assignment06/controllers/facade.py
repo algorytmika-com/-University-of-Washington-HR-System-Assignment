@@ -1,4 +1,4 @@
-import sys
+import sys, os
 
 from controllers import file as f
 
@@ -37,3 +37,7 @@ def report_reminders():
 def exit_program():
     print("Bye!")
     sys.exit() 
+
+def clear_console():
+    clear = lambda: os.system('cls')
+    clear()
