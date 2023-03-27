@@ -1,5 +1,5 @@
 class Csv:
-    def __init__(self, path, header, value):
+    def __init__(self, path, header, values):
         self.path = path
         self.header = header
-        self.value = value
+        self.values = values

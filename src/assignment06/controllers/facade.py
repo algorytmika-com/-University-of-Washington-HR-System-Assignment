@@ -1,6 +1,6 @@
 import sys, os
 
-from controllers import file as f
+from controllers import file as f, employment as e
 
 
 prompt = "\n".join(("Please choose from below options:",
@@ -15,9 +15,8 @@ prompt = "\n".join(("Please choose from below options:",
 
 def load_employees():
     csv = f.get_csv()
-    print(csv.path)
-    print(csv.header)
-    print(csv.value)
+    e.get_employee_list(csv)
+
 
 def save_employees():
     pass
