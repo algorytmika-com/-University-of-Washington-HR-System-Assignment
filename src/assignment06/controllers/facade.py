@@ -15,7 +15,7 @@ prompt = "\n".join(("Please choose from below options:",
 
 def load_employees():
     csv = f.get_csv()
-    e.get_employee_list(csv)
+    e.get_employee_dict(csv)
 
 
 def save_employees():

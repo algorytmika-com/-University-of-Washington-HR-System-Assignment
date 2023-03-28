@@ -1,7 +1,7 @@
-from models import employee as e, csv as c
+from src.assignment06.models import employee as e
 
-def get_employee_list(csv):
-    employees_dict = {}
+def get_employee_dict(csv):
+    employee_dict = {}
     for employee_row in csv.values:
         employee_list = employee_row.strip().split(',')
         employee_id = employee_list[0]
@@ -13,5 +13,5 @@ def get_employee_list(csv):
         start_date = employee_list[6]
         end_date = employee_list[7] 
         employee = e.Employee(employee_id,name,address,ssn,date_of_birth,job_title,start_date,end_date)
-        employees_dict[employee.employee_id] = employee
-    return employees_dict
+        employee_dict[employee.employee_id] = employee
+    return employee_dict
