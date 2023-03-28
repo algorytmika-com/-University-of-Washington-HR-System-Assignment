@@ -1,5 +1,3 @@
-import pytest
-
 from src.assignment06.models import csv as c
 
 def test_csv_pass():

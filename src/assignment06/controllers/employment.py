@@ -1,4 +1,4 @@
-from src.assignment06.models import employee as e
+from models import employee as e
 
 def get_employee_dict(csv):
     employee_dict = {}

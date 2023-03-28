@@ -2,6 +2,7 @@ import sys, os
 
 from controllers import file as f, employment as e
 
+employee_dict = {}
 
 prompt = "\n".join(("Please choose from below options:",
           "1 - Load employees in from a file",
@@ -15,8 +16,7 @@ prompt = "\n".join(("Please choose from below options:",
 
 def load_employees():
     csv = f.get_csv()
-    e.get_employee_dict(csv)
-
+    employee_dict = e.get_employee_dict(csv)
 
 def save_employees():
     pass

@@ -7,4 +7,7 @@
     - https://docs.pytest.org/en/stable/writing_plugins.html
 """
 
-# import pytest
+import pytest, sys, os
+
+#set enviroment ot recognize modules
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)) + '\\..\\src\\assignment06')

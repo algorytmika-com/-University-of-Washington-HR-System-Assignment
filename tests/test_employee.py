@@ -1,5 +1,3 @@
-import pytest
-
 from src.assignment06.models import employee as e
 
 def test_employee_pass():
