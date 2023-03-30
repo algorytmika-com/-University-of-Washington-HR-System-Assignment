@@ -1,10 +1,9 @@
 import os
 
 from models import csv as c
+from utils import format as f
 
-LOCATION_PROMPT = "Give the location and name of the database file that is relative to the above path (e.g. /folder/hr.csv):\n>>>"
-SEPARATOR = "---------------------"
-NEW_LINE_PROMPT = "\n>>>"
+
 
 def get_current_folder():
     return os.getcwd()
@@ -14,11 +13,10 @@ def is_file(path):
 
 def get_file_path(prompt):
     while True: 
-        print(SEPARATOR)
         path = f"{get_current_folder()}\\resources\\hr.csv"
-        print(f"The current path is:\n{path}")
-        print(SEPARATOR)         
-        decision = input(f"Is the path correct? Confirm with [Y] or change with [N]:{NEW_LINE_PROMPT}")  
+        f.print_message(f"The current path is:\n{path}")
+    
+        decision = input(f"Is the path correct? Confirm with [Y] or change with [N]:{f.NEW_LINE_PROMPT}")  
         if decision.upper() == 'N':
             path = input("Enter the path:")
         elif decision.upper() == 'Y':
@@ -35,11 +33,33 @@ def get_file_path(prompt):
 def get_csv_content(path):
     with open(path, 'r') as file:
         return file.readlines()
+    
+def save_csv_to_file(path, content):
+    with open(path, 'w') as file:
+        file.write(content)
 
 def get_csv():
-    path = get_file_path(LOCATION_PROMPT)
+    path = get_file_path(f.LOCATION_PROMPT)
     content = get_csv_content(path)
     header = content[:1]
-    value = content[1:]
-    csv = c.Csv(path, header, value)
+    values = content[1:]
+    csv = c.Csv(path, header, values)
     return csv
+
+def save_csv(employee_dict, csv, new_path):
+    content = ''.join(csv.header)
+    if employee_dict:
+        for e in employee_dict.values():
+            content = f"{content}{e.employee_id},{e.name}\n"
+    print(content)
+
+
+        #header = csv.header
+        #content = content.join(header)
+        #for csv in csv_dict.values():
+        #    values = csv.values
+        #    content = content.join(header)
+
+
+
+

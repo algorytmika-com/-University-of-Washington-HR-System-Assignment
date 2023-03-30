@@ -1,7 +1,9 @@
 import sys, os
 
 from controllers import file as f, employment as e
+from utils import format as fmt
 
+csv = None
 employee_dict = {}
 
 prompt = "\n".join(("Please choose from below options:",
@@ -15,11 +17,16 @@ prompt = "\n".join(("Please choose from below options:",
           ">>> "))
 
 def load_employees():
+    global csv
     csv = f.get_csv()
+    global employee_dict
     employee_dict = e.get_employee_dict(csv)
+    print(fmt.print_message("Employees are loaded in from file."))
 
 def save_employees():
-    pass
+    new_path = f.get_file_path(fmt.LOCATION_PROMPT)
+    employee_content #todo
+    f.save_csv(employee_dict, csv, new_path)
 
 def add_employee():
     pass
