@@ -3,6 +3,7 @@ import sys, os
 from controllers import file as f, employment as e
 from utils import format as fmt
 
+is_file_loaded = False
 csv = None
 employee_dict = {}
 
@@ -18,9 +19,11 @@ prompt = "\n".join(("Please choose from below options:",
 
 def load_employees():
     global csv
-    csv = f.get_csv()
     global employee_dict
+    global is_file_loaded
+    csv = f.get_csv()
     employee_dict = e.get_employee_dict(csv)
+    is_file_loaded = True
     print(fmt.print_message("Employees are loaded in from file."))
 
 def save_employees():
@@ -28,9 +31,11 @@ def save_employees():
     employee_content = e.get_employee_content(csv.header, employee_dict)
     print(employee_content)
     f.save_csv_to_file(new_path, employee_content)
+    print(fmt.print_message("Employees saved to a file."))
 
 def add_employee():
-    pass
+    employee_id = e.get_employee_max_id(employee_dict)
+    print(employee_id)
 
 def report_current_employees():
     pass
