@@ -25,8 +25,9 @@ def load_employees():
 
 def save_employees():
     new_path = f.get_file_path(fmt.LOCATION_PROMPT)
-    employee_content #todo
-    f.save_csv(employee_dict, csv, new_path)
+    employee_content = e.get_employee_content(csv.header, employee_dict)
+    print(employee_content)
+    f.save_csv_to_file(new_path, employee_content)
 
 def add_employee():
     pass

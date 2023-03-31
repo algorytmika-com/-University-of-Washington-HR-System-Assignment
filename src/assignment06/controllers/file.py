@@ -46,19 +46,6 @@ def get_csv():
     csv = c.Csv(path, header, values)
     return csv
 
-def save_csv(employee_dict, csv, new_path):
-    content = ''.join(csv.header)
-    if employee_dict:
-        for e in employee_dict.values():
-            content = f"{content}{e.employee_id},{e.name}\n"
-    print(content)
-
-
-        #header = csv.header
-        #content = content.join(header)
-        #for csv in csv_dict.values():
-        #    values = csv.values
-        #    content = content.join(header)
 
 
 

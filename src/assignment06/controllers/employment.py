@@ -16,3 +16,11 @@ def get_employee_dict(csv):
         employee_dict[employee.employee_id] = employee
     return employee_dict
 
+def get_employee_content(header, employee_dict):
+    content = ''.join(header)
+    if employee_dict:
+        for e in employee_dict.values():
+            content = f"{content}{e.employee_id},{e.name},{e.address},{e.ssn}," \
+            f"{e.date_of_birth},{e.job_title},{e.start_date},{e.end_date}\n"
+    return content.rstrip()
+
