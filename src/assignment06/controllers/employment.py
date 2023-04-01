@@ -25,6 +25,11 @@ def get_employee_content(header, employee_dict):
             f"{e.date_of_birth},{e.job_title},{e.start_date},{e.end_date}\n"
     return content.rstrip()
 
+def get_employee_obj(employee_id, name, address, ssn, date_of_birth,
+                                      job_title, start_date, end_date):
+    return e.Employee(employee_id, name, address, ssn, date_of_birth,
+                                      job_title, start_date, end_date)
+
 def get_employee_incremented_id(employee_dict):
     if employee_dict:
         employee_id = max(list(employee_dict.keys())) + 1
@@ -38,7 +43,7 @@ def get_input(prompt, validation_option):
         if v.is_valid(result, validation_option):
             break
         else:
-            print("The inserted value is no correct. Please enter again: ")
+            print("The inserted value is not correct. Please enter again: ")
             continue
     return result
 
@@ -53,4 +58,13 @@ def get_input_employee_ssn():
 
 def get_input_employee_date_of_birth():
     return get_input("Enter the date of birth:", 'date_of_birth')
+
+def get_input_employee_job_title():
+    return get_input("Enter the job title:", 'job_title')
+
+def get_input_employee_start_date():
+    return get_input("Enter the start date:", 'start_date')
+
+def get_input_employee_end_date():
+    return get_input("Enter the date date:", 'end_date')
 

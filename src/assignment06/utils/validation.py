@@ -9,7 +9,13 @@ def is_valid(value, option):
     elif option == 'ssn':
         return is_ssn(value)          
     elif option == 'date_of_birth':
-        return is_date(value)          
+        return is_required_date(value)      
+    elif option == 'job_title':
+        return is_job_title(value)  
+    elif option == 'start_date':
+        return is_required_date(value)    
+    elif option == 'end_date':
+        return is_not_required_date(value)                 
     else:
         return False
     
@@ -25,14 +31,19 @@ def is_address(input):
     document = {'input' : input}
     return v.validate(document)
 
+def is_job_title(input):
+    schema = {'input': {'type' : 'string', 'minlength': 3}}
+    v = Validator(schema)
+    document = {'input' : input}
+    return v.validate(document)
+
 def is_ssn(input):
     schema = {'input': {'type' : 'string', 'minlength': 9, 'maxlength': 9, 'regex' : '^[0-9]*$'}}
     v = Validator(schema)
     document = {'input' : input}
     return v.validate(document)
 
-def is_date(input):
-    print(000000)
+def is_required_date(input):
     if isinstance(input, str):
         format_str = '%m/%d/%Y'
         try:
@@ -41,7 +52,19 @@ def is_date(input):
             return False
     else:
         return False
-    schema = {'input': {'type' : 'datetime'}}
-    v = Validator(schema)
-    document = {'input' : input}
-    return v.validate(document)
+    if isinstance(input, datetime):
+        if input.date() > datetime.now().date():
+            return False
+        else:
+            schema = {'input': {'type' : 'datetime'}}
+            v = Validator(schema)
+            document = {'input' : input}
+            return v.validate(document)   
+    else:
+        return False
+    
+def is_not_required_date(input):
+    if input == '':
+        return True
+    else:
+        return is_required_date(input)

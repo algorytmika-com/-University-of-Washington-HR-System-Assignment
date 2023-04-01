@@ -33,11 +33,21 @@ def save_employees():
     print(fmt.print_message("Employees saved to a file."))
 
 def add_employee():
+    global employee_dict
     employee_id = e.get_employee_incremented_id(employee_dict)
     name = e.get_input_employee_name()
     address = e.get_input_employee_address()
     ssn = e.get_input_employee_ssn()
     date_of_birth = e.get_input_employee_date_of_birth()
+    job_title = e.get_input_employee_job_title()
+    start_date = e.get_input_employee_start_date()
+    end_date = e.get_input_employee_end_date()
+
+    employee_obj = e.get_employee_obj(employee_id, name, address, ssn, date_of_birth,
+                                      job_title, start_date, end_date)
+    employee_dict[employee_id] = employee_obj
+    print(employee_dict)
+
 
 def report_current_employees():
     pass
