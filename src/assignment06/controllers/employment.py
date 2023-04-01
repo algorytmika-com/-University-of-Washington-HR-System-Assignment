@@ -1,4 +1,5 @@
 from models import employee as e
+from utils import validation as v
 
 def get_employee_dict(csv):
     employee_dict = {}
@@ -24,10 +25,25 @@ def get_employee_content(header, employee_dict):
             f"{e.date_of_birth},{e.job_title},{e.start_date},{e.end_date}\n"
     return content.rstrip()
 
-def get_employee_max_id(employee_dict):
+def get_employee_incremented_id(employee_dict):
     if employee_dict:
         employee_id = max(list(employee_dict.keys())) + 1
     else:
         employee_id = 1
     return employee_id
+
+def get_input(prompt, validation_option):
+    while True:
+        result = input(f"{prompt} ")
+        if v.is_valid(result, validation_option):
+            break
+        else:
+            print("The inserted value is no correct. Please enter again: ")
+            continue
+    return result
+
+def get_input_employee_name():
+    return get_input("Enter the name:", 'full_name')
+
+
 

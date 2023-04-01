@@ -13,5 +13,5 @@ def test_get_employee_dict_pass():
 def test_get_employee_max_id_pass():
     employee_dict = {8:'', 4:'', 2:''}
     expected_id = 9
-    actual_id = e.get_employee_max_id(employee_dict)
+    actual_id = e.get_employee_incremented_id(employee_dict)
     assert expected_id == actual_id

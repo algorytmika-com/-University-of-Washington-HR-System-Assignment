@@ -29,13 +29,12 @@ def load_employees():
 def save_employees():
     new_path = f.get_file_path(fmt.LOCATION_PROMPT)
     employee_content = e.get_employee_content(csv.header, employee_dict)
-    print(employee_content)
     f.save_csv_to_file(new_path, employee_content)
     print(fmt.print_message("Employees saved to a file."))
 
 def add_employee():
-    employee_id = e.get_employee_max_id(employee_dict)
-    print(employee_id)
+    employee_id = e.get_employee_incremented_id(employee_dict)
+    name = e.get_input_employee_name()
 
 def report_current_employees():
     pass
