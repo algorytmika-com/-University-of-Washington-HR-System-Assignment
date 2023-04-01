@@ -35,6 +35,9 @@ def save_employees():
 def add_employee():
     employee_id = e.get_employee_incremented_id(employee_dict)
     name = e.get_input_employee_name()
+    address = e.get_input_employee_address()
+    ssn = e.get_input_employee_ssn()
+    date_of_birth = e.get_input_employee_date_of_birth()
 
 def report_current_employees():
     pass

@@ -45,5 +45,12 @@ def get_input(prompt, validation_option):
 def get_input_employee_name():
     return get_input("Enter the name:", 'full_name')
 
+def get_input_employee_address():
+    return get_input("Enter the address:", 'address')
 
+def get_input_employee_ssn():
+    return get_input("Enter the Social Security Number:", 'ssn')
+
+def get_input_employee_date_of_birth():
+    return get_input("Enter the date of birth:", 'date_of_birth')
 
