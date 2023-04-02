@@ -17,7 +17,7 @@ def main():
         elif response == "5":
             f.report_former_employees()  
         elif response == "6":        
-            f.report_reminders    
+            f.report_reminders()  
         elif response == "7":
             f.exit_program()
         else:

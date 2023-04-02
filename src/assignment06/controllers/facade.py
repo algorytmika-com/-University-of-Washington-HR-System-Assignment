@@ -53,10 +53,11 @@ def report_current_employees():
 
 def report_former_employees():
     fmt.print_message("EMPLOYEES WHO HAVE LEFT WITHIN PAST 31 DAYS")
-    r.print_former_employees(employee_dict, up_to_days_ago = 31)
+    r.print_former_employees(employee_dict, 31)
 
 def report_reminders():
-    pass
+    fmt.print_message("EMPLOYEES WHO'S WORK ANNIVERSARY ARE WITHIN 90 DAYS'")
+    r.print_annual_review_reminder(employee_dict, 90)
 
 def exit_program():
     print("Bye!")

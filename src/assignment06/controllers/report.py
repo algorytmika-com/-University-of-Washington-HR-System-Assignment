@@ -1,5 +1,5 @@
-from datetime import datetime, timedelta
 from models import employee as e
+from utils  import date_utils as d
 
 
 def print_current_employees(employee_dict):
@@ -9,20 +9,32 @@ def print_current_employees(employee_dict):
             current_employee_dict[e.employee_id] = e
     print_employees(current_employee_dict)
 
-def print_former_employees(employee_dict, up_to_days_ago = 31):
-    past_date = datetime.today() - timedelta(days=up_to_days_ago)
+def print_former_employees(employee_dict, up_to_days_ago):
     former_employee_dict = {}
     for e in employee_dict.values():
         if e.end_date:
             try:
-                end_date = datetime.strptime(e.end_date , '%m/%d/%Y')
+                end_date = d.get_date_converted_from_str(e.end_date, '%m/%d/%Y')
             except ValueError:
                 print("End date is not formatted as mm/dd/YYYY")
                 break
-            if end_date >= past_date:
+            if d.is_date_in_past_days(end_date, up_to_days_ago):
                 former_employee_dict[e.employee_id] = e
     print_employees(former_employee_dict)
 
+def print_annual_review_reminder(employee_dict, days_wtihin):
+    annual_employee_dict = {}
+    for e in employee_dict.values():
+        if not e.end_date:
+            try:
+                start_date = d.get_date_converted_from_str(e.start_date, '%m/%d/%Y')
+            except ValueError:
+                print("Start date is not formatted as mm/dd/YYYY")
+                break
+            next_anniversary = d.get_next_anniversary(start_date)
+            if d.is_date_in_future_days(next_anniversary, days_wtihin):
+                annual_employee_dict[e.employee_id] = e
+    print_employees(annual_employee_dict)
 
 
 def print_employees(employee_dict):
