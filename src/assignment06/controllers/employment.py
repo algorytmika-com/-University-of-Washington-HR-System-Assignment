@@ -9,6 +9,7 @@ def get_employee_dict(csv):
         name = employee_list[1].strip()
         address = employee_list[2].strip()
         ssn = employee_list[3].strip()
+        print(ssn)
         date_of_birth = employee_list[4].strip()
         job_title = employee_list[5].strip()
         start_date = employee_list[6].strip()

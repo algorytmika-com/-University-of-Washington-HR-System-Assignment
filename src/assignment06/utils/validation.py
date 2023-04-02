@@ -2,22 +2,31 @@ from cerberus import Validator
 from datetime import datetime
 
 def is_valid(value, option):
-    if option == 'full_name':
-        return is_full_name(value)
-    elif option == 'address':
-        return is_address(value)  
-    elif option == 'ssn':
-        return is_ssn(value)          
-    elif option == 'date_of_birth':
-        return is_required_date(value)      
-    elif option == 'job_title':
-        return is_job_title(value)  
-    elif option == 'start_date':
-        return is_required_date(value)    
-    elif option == 'end_date':
-        return is_not_required_date(value)                 
+    if is_not_comma(input):
+        if option == 'full_name':
+            return is_full_name(value)
+        elif option == 'address':
+            return is_address(value)  
+        elif option == 'ssn':
+            return is_ssn(value)          
+        elif option == 'date_of_birth':
+            return is_required_date(value)      
+        elif option == 'job_title':
+            return is_job_title(value)  
+        elif option == 'start_date':
+            return is_required_date(value)    
+        elif option == 'end_date':
+            return is_not_required_date(value)                 
+        else:
+            return False
     else:
         return False
+    
+def is_not_comma(input):
+    schema = {'input': {'type' : 'string', 'contains' : ','}}
+    v = Validator(schema)
+    document = {'input' : input}
+    return not v.validate(document)    
     
 def is_full_name(input):
     schema = {'input': {'type' : 'string', 'minlength': 5, 'regex' : r'[a-zA-Z \.]+'}}

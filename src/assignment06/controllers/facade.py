@@ -42,12 +42,11 @@ def add_employee():
     job_title = e.get_input_employee_job_title()
     start_date = e.get_input_employee_start_date()
     end_date = e.get_input_employee_end_date()
-
     employee_obj = e.get_employee_obj(employee_id, name, address, ssn, date_of_birth,
                                       job_title, start_date, end_date)
     employee_dict[employee_id] = employee_obj
     print(employee_dict)
-
+    print(fmt.print_message("Employee added to memory. Use option 2 to save to a file."))    
 
 def report_current_employees():
     pass

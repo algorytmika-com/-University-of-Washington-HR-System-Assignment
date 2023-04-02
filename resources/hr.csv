@@ -1,3 +1,94 @@
-employee_id,name,address,ssn,date_of_birth,job_title,start_date,end_date
-1,Anubhaw Arya,Seattle,1234567890,1/1/1970,lecturer,1/1/2021,
-2,Michael Jordan,Chicago,229239521,2/17/1963,basketball player,1/1/1990,1/1/2004
+﻿employee_id,name,address,ssn,date_of_birth,job_title,start_date,end_date
+281,Justin Smith,Port Robertbury,787-22-4189,12/16/2006,Fine artist,12/04/1999,04/15/1985
+318,Shelia Gomez,Markburgh,317-12-8240,05/24/1974,Warehouse manager,06/16/1988,12/01/1988
+412,Claire Gordon,Port Manuel,723-66-6513,12/28/1999,Retail buyer,04/23/2002,06/18/1971
+22,Joshua Moore,South Larryshire,632-13-2311,02/22/1982,Clinical psychologist,05/26/1989,
+296,Alexis Jacobson,Davisland,878-79-4904,06/25/1976,English as a second language teacher,05/22/2019,
+98,Kaylee Matthews,Port Rebecca,392-68-8343,11/25/2017,Designer  multimedia,11/25/1997,
+851,David Gray,Ericburgh,694-11-3250,05/15/2000,Medical technical officer,12/30/2006,
+61,Rhonda Miller,Jeffreymouth,143-44-9339,09/11/1993,Hydrogeologist,12/10/2014,
+188,Thomas Rhodes,New Matthew,032-44-6095,04/18/2008,Restaurant manager  fast food,09/19/1990,
+682,Christina Watkins,New Gracestad,168-40-8589,06/28/1987,Telecommunications researcher,08/15/2000,
+75,Diana Nelson,Johnstonchester,171-72-6226,04/09/1976,Travel agency manager,02/27/1991,09/16/1991
+508,Bradley Burgess,South Williamville,616-68-7010,01/27/1998,Teacher  early years/pre,03/07/1993,
+545,Jonathon Thompson,Serranoside,342-16-5630,07/21/1975,Secretary  company,07/03/1997,
+273,Sherri Ramirez,Lake Brianstad,325-53-7232,01/17/1994,IT sales professional,01/23/1992,01/19/1996
+968,John Yang,Melaniefort,852-32-0099,10/28/1985,Tax adviser,07/19/1987,03/26/1972
+705,Brandon Martinez,North Jenniferchester,602-83-6811,03/05/1982,Advertising account planner,03/21/1997,04/09/2019
+777,Jill Watkins,Cookton,605-35-4061,07/10/2016,Bookseller,03/06/1991,12/12/1979
+994,Kelsey Park,East Stephanieside,235-53-9546,03/10/2015,Environmental health practitioner,02/04/1980,12/19/2020
+695,Laura Mason,Port Johnville,818-50-3053,10/22/2016,IT consultant,08/03/2009,04/03/1978
+896,David Newton,East Zacharychester,406-89-3608,11/15/2002,Public relations officer,07/29/2001,09/18/2002
+548,Clayton Rodriguez,South Erica,282-81-3706,04/19/1995,Solicitor  Scotland,05/17/1990,08/02/1998
+584,Steven Parrish,Port Jessicamouth,495-05-3608,03/06/1996,Herbalist,12/18/2018,
+791,Amanda Patrick DDS,East Raymondstad,224-25-9003,05/03/1999,Food technologist,05/18/1972,
+271,Linda Gaines,New Ronald,614-51-7543,01/22/2015,Air broker,11/18/1973,
+744,Mark Andrade,Jenniferville,577-48-0693,09/18/1986,Lobbyist,09/21/1994,
+573,Michael Bond,Ayersmouth,646-83-1088,05/30/2022,Company secretary,01/30/1979,
+940,Shelly Neal,South Kyle,646-27-9944,08/19/2021,Ranger/warden,11/21/1971,
+132,Joseph Wade,Annechester,587-12-8821,07/29/1988,Insurance account manager,12/27/1998,09/24/1994
+154,Frederick Cruz,North Michael,078-43-2789,07/27/1978,Arboriculturist,06/23/1970,
+795,Elizabeth Jackson,Lake John,356-82-4506,11/09/1979,Electrical engineer,04/25/1988,09/08/2009
+286,Rose Pierce,Port Bridgetburgh,357-63-5127,03/27/1978,English as a foreign language teacher,09/13/2021,07/15/1995
+938,Erin Gordon,Adrianshire,878-19-6475,02/07/2006,Meteorologist,11/06/1982,10/06/1974
+157,Tammy Bernard,Brownburgh,677-70-0650,12/19/1991,Surveyor  planning and development,05/04/2014,06/15/2021
+196,Kayla Hopkins,South Anthony,390-80-8722,01/01/1989,Plant breeder/geneticist,05/06/1999,05/13/2006
+575,Christy Pope,Pricefort,307-33-7927,08/14/2002,Pharmacist  hospital,08/27/1995,
+449,Susan Frank,West David,557-60-7606,02/11/1973,Tourist information centre manager,02/09/1997,
+947,Monica Moore,Lake James,174-41-2420,06/26/2016,Health and safety adviser,04/05/1982,
+798,Jesus Rodriguez,Lake Brenda,464-95-8831,09/29/2011,Manufacturing engineer,11/14/1989,
+935,John Thompson,West Christopher,686-48-7784,05/31/1979,Analytical chemist,02/09/2008,
+231,Chad Richard,Stewartfurt,103-08-9020,02/01/2006,Personnel officer,09/21/2002,
+561,Thomas Edwards,New Matthew,669-39-9538,05/26/2013,Banker,08/23/2013,09/16/1986
+426,Lisa Weber,Smithmouth,324-62-9512,02/18/1984,Surveyor  commercial/residential,10/27/1999,01/08/2013
+346,David Conley,Port Melissaside,209-69-8418,11/27/1991,Civil Service administrator,09/10/2000,11/25/1973
+993,Kimberly Jackson,Lake Christopher,347-83-7996,12/05/1987,Land,08/17/2020,06/05/2011
+148,Jill Mercado,Michaelbury,754-09-7100,09/25/2011,Engineer  technical sales,06/07/1973,01/08/2006
+195,Tiffany Shelton,Yvetteberg,401-91-3414,01/18/1991,Visual merchandiser,02/04/2008,
+168,Monica Smith,West Mary,015-18-6575,03/11/2014,Oceanographer,11/30/2019,
+988,Nicolas York,Jamieview,746-04-1478,11/22/1998,Osteopath,10/04/1975,
+792,Cody Patel,Lisaside,869-59-4487,08/22/1981,Publishing rights manager,06/28/2009,11/28/1976
+438,Daniel Johnson,New Jeremy,280-56-2380,08/16/1999,Psychologist  occupational,12/15/1999,11/12/2010
+200,Gilbert Shelton,Port Kathleen,366-87-0449,04/22/1977,Chief Marketing Officer,07/18/1977,09/22/1998
+444,Natasha Parker,Robersonland,137-21-4545,01/18/2016,Health service manager,05/18/1973,01/31/1971
+931,Jessica Smith,Joshuaview,493-90-3624,08/24/2009,Systems analyst,02/16/1985,10/15/2008
+728,Cheryl Huff,Port Sean,641-56-2804,06/06/1989,Personal assistant,07/27/1978,12/15/1995
+77,Susan Thornton,North Samuel,330-71-9083,03/29/2022,Quarry manager,08/26/1983,06/11/1980
+88,John Hart,South Diane,593-82-2937,04/03/1993,Dramatherapist,08/15/1991,08/20/1998
+949,Jeffrey Riley,North Katherine,028-70-0252,08/28/2005,Camera operator,03/27/2023,
+844,Raymond Smith,Eddiestad,795-88-5664,08/31/1973,Oncologist,12/15/1987,
+416,Victoria Olson,Sheriland,074-75-1578,09/15/2007,Designer  textile,11/09/1980,
+806,Jennifer Wallace,Fisherview,320-85-8224,04/02/2007,Sound technician  broadcasting/film/video,01/20/2005,
+804,Samuel Koch,Katherineside,625-40-8722,10/26/2009,Armed forces technical officer,11/13/1983,
+770,John Lyons,North Patrickburgh,806-31-6300,03/18/1989,Food technologist,06/16/2001,06/07/1983
+20,Nicole Allen,Knightberg,515-11-9856,09/30/2005,Commissioning editor,11/23/1998,01/30/2017
+527,David Colon,New Dianaport,494-20-3326,12/26/1970,Legal executive,03/25/2009,07/09/2016
+831,Karl Taylor,Amandafort,404-37-9330,05/29/1997,Midwife,02/04/1983,11/08/1972
+666,Matthew Ingram,North David,171-63-9065,06/22/1995,Clinical cytogeneticist,10/01/1994,04/06/1976
+258,Christopher Blair,Brownstad,789-90-9649,10/08/1990,Event organiser,05/12/1970,
+860,Roger Johnson,Gutierrezside,781-85-2600,11/01/1985,Tax inspector,10/29/1978,
+766,Benjamin Morrison,North Kathleen,311-25-2146,11/06/2010,Chartered public finance accountant,11/12/1974,
+441,Nicholas Howell,Lake Tanyabury,776-70-1002,04/04/2012,Scientist  forensic,12/07/1989,10/01/1993
+193,James Pennington,Jamesport,457-16-3254,03/30/1988,Games developer,01/10/1986,09/08/2009
+924,Jessica Hernandez,Samanthaville,115-07-8286,02/22/2003,Ranger/warden,06/04/2017,07/08/2009
+128,Joshua Hester,Melissafurt,079-29-3142,03/23/2011,Psychotherapist  dance movement,06/23/1975,04/07/1976
+201,Jeffrey Murray,Lake Allisonchester,069-10-1462,01/26/2023,Garment/textile technologist,08/16/2009,12/12/1971
+164,Sarah Cox,Gonzalezside,405-29-0379,08/13/2006,Bonds trader,11/10/2022,07/13/1998
+28,Megan Morris,Catherineside,652-87-0704,12/10/1996,Neurosurgeon,03/13/1997,06/03/1979
+568,Bradley Guerrero,Melissaside,766-60-9033,03/27/2022,Editorial assistant,02/18/1974,
+391,Susan Powell,Beckborough,774-94-9244,11/23/2017,Chartered accountant,04/18/2006,
+17,Richard Fritz,Williamton,873-87-4082,08/27/1994,Runner  broadcasting/film/video,10/31/2001,
+307,Sarah Stewart,Port Dave,834-39-6785,03/03/1998,Clinical cytogeneticist,01/23/1995,
+203,Peter Webb,Ortizland,339-42-6020,09/20/2006,Hydrographic surveyor,11/18/1980,
+248,Jacqueline Garrett,North Brittney,670-79-2733,06/23/1977,Musician,08/01/1977,
+160,Brandi Mendoza,Hernandezbury,174-38-1526,03/03/1992,TEFL teacher,02/22/2020,01/11/2014
+638,Valerie White,Andersonville,363-65-1326,10/12/1976,Designer  jewellery,08/08/1998,06/27/2012
+840,Rhonda Smith,Johnsonfort,290-28-8420,10/11/1996,Lecturer  higher education,07/14/1981,08/21/1982
+124,Mr. Robert Hamilton MD,West Anna,570-55-3865,06/07/2020,Therapist  occupational,11/10/1972,04/02/1983
+812,Wayne Lee,West Ethan,759-92-4281,06/14/2021,Surveyor  minerals,12/03/2015,
+745,Monica Lambert,North Nicoleport,897-12-1903,09/02/2010,Agricultural engineer,04/05/1990,
+866,Erika Huber,Sandrashire,080-14-7205,01/10/1978,Production designer  theatre/television/film,06/09/2016,
+324,Maria Harvey,East Melody,358-03-2355,02/08/2018,Estate agent,08/02/2007,
+113,Matthew Moyer,Youngbury,892-69-8521,04/29/2009,Production engineer,05/15/2006,
+895,Christopher Pratt,Port Karenmouth,178-06-5996,05/17/1982,Clothing/textile technologist,04/27/2001,06/20/1982
+590,Heidi Lee,New Gary,014-41-0642,02/25/1994,Administrator  charities/voluntary organisations,12/29/2006,03/18/1986
