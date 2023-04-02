@@ -48,11 +48,12 @@ def add_employee():
     fmt.print_message("Employee added to memory. Use option 2 to save to a file.")  
 
 def report_current_employees():
-    print(fmt.print_message("CURRENT EMPLOYEES")) 
+    fmt.print_message("CURRENT EMPLOYEES")
     r.print_current_employees(employee_dict)
 
 def report_former_employees():
-    pass
+    fmt.print_message("EMPLOYEES WHO HAVE LEFT WITHIN PAST 31 DAYS")
+    r.print_former_employees(employee_dict, up_to_days_ago = 31)
 
 def report_reminders():
     pass
