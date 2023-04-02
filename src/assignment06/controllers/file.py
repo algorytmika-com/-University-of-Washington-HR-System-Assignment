@@ -15,7 +15,7 @@ def is_file(path):
 def get_file_path(prompt):
     while True: 
         path = f"{get_current_folder()}\\resources\\hr.csv"
-        f.print_message(f"The current path is:\n{path}")
+        f.print_message(f"The current path is: {path}")
     
         decision = input(f"Is the path correct? Confirm with [Y] or change with [N]:{f.NEW_LINE_PROMPT}")  
         if decision.upper() == 'N':

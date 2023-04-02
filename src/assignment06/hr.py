@@ -1,7 +1,9 @@
 from controllers import facade as f
+from utils import format as fmt
 
 def main():
     while True:
+        fmt.print_message("MENU")
         response = input(f.prompt)  
         f.clear_console()
         if response == "1":
