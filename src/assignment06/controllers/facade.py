@@ -3,9 +3,8 @@ import sys, os
 from controllers import file as f, employment as e, report as r
 from utils import format as fmt
 
-#is_file_loaded = False
-#csv = None
-#employee_dict = {}
+csv = None
+employee_dict = {}
 
 prompt = "\n".join(("Please choose from below options:",
           "1 - Load employees in from a file",
@@ -56,7 +55,7 @@ def report_former_employees():
     r.print_former_employees(employee_dict, 31)
 
 def report_reminders():
-    fmt.print_message("EMPLOYEES WHO'S WORK ANNIVERSARY ARE WITHIN 90 DAYS'")
+    fmt.print_message("EMPLOYEES WHO'S WORK ANNIVERSARY ARE WITHIN 90 DAYS")
     r.print_annual_review_reminder(employee_dict, 90)
 
 def exit_program():
