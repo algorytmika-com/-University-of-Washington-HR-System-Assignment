@@ -47,7 +47,7 @@ def is_job_title(input):
     return v.validate(document)
 
 def is_ssn(input):
-    schema = {'input': {'type' : 'string', 'minlength': 9, 'maxlength': 9, 'regex' : '^[0-9]*$'}}
+    schema = {'input': {'type' : 'string',  'regex' : '^\d{3}-?\d{2}-?\d{4}$'}}
     v = Validator(schema)
     document = {'input' : input}
     return v.validate(document)
